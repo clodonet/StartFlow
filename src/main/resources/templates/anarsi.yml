@@ -1,0 +1,44 @@
+steps:
+  - id: escape
+    display-name-key: step.anarsi.escape.name
+    description-key: step.anarsi.escape.description
+    hint-key: step.anarsi.escape.hint
+    reward-message-key: reward.anarsi.escape.message
+    trigger: region
+    icon: LEATHER_BOOTS
+    world: world
+    min: [500, -64, 500]
+    max: [1500, 320, 1500]
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: loot
+    display-name-key: step.anarsi.loot.name
+    description-key: step.anarsi.loot.description
+    hint-key: step.anarsi.loot.hint
+    reward-message-key: reward.anarsi.loot.message
+    trigger: item
+    icon: IRON_SWORD
+    material: IRON_SWORD
+    amount: 1
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: info
+    display-name-key: step.anarsi.info.name
+    description-key: step.anarsi.info.description
+    hint-key: step.anarsi.info.hint
+    reward-message-key: reward.anarsi.info.message
+    trigger: command
+    icon: WRITABLE_BOOK
+    command: "discord"
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: base
+    display-name-key: step.anarsi.base.name
+    description-key: step.anarsi.base.description
+    hint-key: step.anarsi.base.hint
+    reward-message-key: reward.anarsi.base.message
+    trigger: place
+    icon: OBSIDIAN
+    material: OBSIDIAN
+    rewards:
+      - "give <player> iron_ingot 2"

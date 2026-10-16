@@ -1,0 +1,54 @@
+steps:
+  - id: island
+    display-name-key: step.skyblock.island.name
+    description-key: step.skyblock.island.description
+    hint-key: step.skyblock.island.hint
+    reward-message-key: reward.skyblock.island.message
+    trigger: command
+    icon: GRASS_BLOCK
+    command: "is"
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: cobble
+    display-name-key: step.skyblock.cobble.name
+    description-key: step.skyblock.cobble.description
+    hint-key: step.skyblock.cobble.hint
+    reward-message-key: reward.skyblock.cobble.message
+    trigger: item
+    icon: COBBLESTONE
+    material: COBBLESTONE
+    amount: 16
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: build
+    display-name-key: step.skyblock.build.name
+    description-key: step.skyblock.build.description
+    hint-key: step.skyblock.build.hint
+    reward-message-key: reward.skyblock.build.message
+    trigger: place
+    icon: OAK_PLANKS
+    material: OAK_PLANKS
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: spawn
+    display-name-key: step.skyblock.spawn.name
+    description-key: step.skyblock.spawn.description
+    hint-key: step.skyblock.spawn.hint
+    reward-message-key: reward.skyblock.spawn.message
+    trigger: region
+    icon: BEACON
+    world: world
+    min: [-24, 60, -24]
+    max: [24, 100, 24]
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: shop
+    display-name-key: step.skyblock.shop.name
+    description-key: step.skyblock.shop.description
+    hint-key: step.skyblock.shop.hint
+    reward-message-key: reward.skyblock.shop.message
+    trigger: command
+    icon: EMERALD
+    command: "market"
+    rewards:
+      - "give <player> iron_ingot 2"

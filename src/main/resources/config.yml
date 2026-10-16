@@ -1,0 +1,139 @@
+default-language: tr
+effects: true
+welcome: true
+metrics: true
+update-check: true
+completion-rewards: []
+completion-reward-message-key: reward.completion.message
+daily-reward:
+  enabled: false
+  reset-after-days: 2
+  message-key: daily.reward.message
+  milestone-message-key: daily.milestone.message
+  commands:
+    - "give <player> iron_ingot <streak>"
+  milestones:
+    7:
+      - "give <player> diamond 3"
+    30:
+      - "give <player> netherite_ingot 1"
+playtime-reward:
+  enabled: false
+  afk-after-seconds: 120
+  milestones:
+    - id: beginner
+      hours: 1
+      commands:
+        - "give <player> iron_ingot 10"
+      message-key: playtime.reward.message
+    - id: veteran
+      hours: 5
+      commands:
+        - "give <player> diamond 3"
+    - id: champion
+      hours: 24
+      commands:
+        - "give <player> netherite_ingot 1"
+rules:
+  enabled: false
+  restrict: false
+  lines-keys:
+    - rules.line.1
+    - rules.line.2
+    - rules.line.3
+    - rules.line.4
+  accept-reward-commands: []
+  # Write your rules here to use the same text in every language, e.g.:
+  # lines:
+  #   - "1. Be kind to other players."
+  #   - "2. No cheating."
+  # Or per client language (falls back to lines):
+  # lines-by-language:
+  #   en:
+  #     - "1. Be kind to other players."
+  #   tr:
+  #     - "1. Diğer oyunculara saygılı ol."
+starter-kit:
+  enabled: false
+  give-on: first-join
+  message-key: starter-kit.message
+  items:
+    - material: STONE_SWORD
+      amount: 1
+      name:
+        en: "<green>Starter Sword</green>"
+        tr: "<green>Başlangıç Kılıcı</green>"
+      lore:
+        en:
+          - "<gray>Your first weapon for the journey.</gray>"
+        tr:
+          - "<gray>Yolculuğun için ilk silahın.</gray>"
+    - material: BREAD
+      amount: 16
+    - material: TORCH
+      amount: 16
+join-messages:
+  enabled: false
+  first-join-broadcast: true
+  first-join: join.first.message
+  join: join.player.message
+  quit: quit.player.message
+steps:
+  - id: home
+    display-name-key: step.home.name
+    description-key: step.home.description
+    hint-key: step.home.hint
+    reward-message-key: reward.home.message
+    trigger: home
+    icon: RED_BED
+    rewards: []
+  - id: sale
+    display-name-key: step.sale.name
+    description-key: step.sale.description
+    hint-key: step.sale.hint
+    reward-message-key: reward.sale.message
+    trigger: sale
+    icon: EMERALD
+    min-gain: 1.0
+    fallback:
+      display-name-key: step.sale.fallback.name
+      description-key: step.sale.fallback.description
+      hint-key: step.sale.fallback.hint
+      trigger: trade
+      icon: EMERALD
+    rewards: []
+  - id: claim
+    display-name-key: step.claim.name
+    description-key: step.claim.description
+    hint-key: step.claim.hint
+    reward-message-key: reward.claim.message
+    trigger: claim
+    icon: GOLDEN_SHOVEL
+    fallback:
+      display-name-key: step.claim.fallback.name
+      description-key: step.claim.fallback.description
+      hint-key: step.claim.fallback.hint
+      trigger: place
+      icon: CHEST
+      material: CHEST
+    rewards: []
+  - id: market
+    display-name-key: step.market.name
+    description-key: step.market.description
+    hint-key: step.market.hint
+    reward-message-key: reward.market.message
+    trigger: region
+    icon: COMPASS
+    world: world
+    min: [-32, 60, -32]
+    max: [32, 120, 32]
+    rewards: []
+  - id: quest
+    display-name-key: step.quest.name
+    description-key: step.quest.description
+    hint-key: step.quest.hint
+    reward-message-key: reward.quest.message
+    trigger: command
+    icon: WRITABLE_BOOK
+    command: "rehber"
+    rewards: []

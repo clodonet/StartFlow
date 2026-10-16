@@ -1,0 +1,64 @@
+steps:
+  - id: home
+    display-name-key: step.survival.home.name
+    description-key: step.survival.home.description
+    hint-key: step.survival.home.hint
+    reward-message-key: reward.survival.home.message
+    trigger: home
+    icon: RED_BED
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: claim
+    display-name-key: step.survival.claim.name
+    description-key: step.survival.claim.description
+    hint-key: step.survival.claim.hint
+    reward-message-key: reward.survival.claim.message
+    trigger: claim
+    icon: GOLDEN_SHOVEL
+    fallback:
+      display-name-key: step.survival.claim.fallback.name
+      description-key: step.survival.claim.fallback.description
+      hint-key: step.survival.claim.fallback.hint
+      trigger: place
+      icon: CHEST
+      material: CHEST
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: sale
+    display-name-key: step.survival.sale.name
+    description-key: step.survival.sale.description
+    hint-key: step.survival.sale.hint
+    reward-message-key: reward.survival.sale.message
+    trigger: sale
+    icon: EMERALD
+    min-gain: 1.0
+    fallback:
+      display-name-key: step.survival.sale.fallback.name
+      description-key: step.survival.sale.fallback.description
+      hint-key: step.survival.sale.fallback.hint
+      trigger: trade
+      icon: EMERALD
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: market
+    display-name-key: step.survival.market.name
+    description-key: step.survival.market.description
+    hint-key: step.survival.market.hint
+    reward-message-key: reward.survival.market.message
+    trigger: region
+    icon: COMPASS
+    world: world
+    min: [-32, 60, -32]
+    max: [32, 120, 32]
+    rewards:
+      - "give <player> iron_ingot 2"
+  - id: rules
+    display-name-key: step.survival.rules.name
+    description-key: step.survival.rules.description
+    hint-key: step.survival.rules.hint
+    reward-message-key: reward.survival.rules.message
+    trigger: command
+    icon: WRITABLE_BOOK
+    command: "kurallar"
+    rewards:
+      - "give <player> iron_ingot 2"

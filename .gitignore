@@ -1,0 +1,7 @@
+PLAN.md
+gorev-*.md
+AGENTS.md
+GEMINI.md
+build/
+.gradle/
+*.jar
