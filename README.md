@@ -152,12 +152,12 @@ When PlaceholderAPI is installed, the following placeholders are available:
 StartFlow detects player client locales and automatically displays messages in their preferred language. If a player's locale is not supported, messages fall back to `default-language` in `config.yml`.
 
 Included languages:
-- English (`en.yml`)
-- Turkish (`tr.yml`)
-- German (`de.yml`)
-- Spanish (`es.yml`)
-- Russian (`ru.yml`)
-- Portuguese (`pt.yml`)
+- 🇬🇧 English (`en.yml`)
+- 🇹🇷 Turkish (`tr.yml`)
+- 🇩🇪 German (`de.yml`)
+- 🇪🇸 Spanish (`es.yml`)
+- 🇷🇺 Russian (`ru.yml`)
+- 🇧🇷 Portuguese (`pt.yml`)
 
 All language files can be edited in `plugins/StartFlow/messages/`.
 
