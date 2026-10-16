@@ -1,6 +1,6 @@
 # StartFlow
 
-StartFlow is an open-source Paper plugin designed to guide new players through onboarding steps and show server administrators exactly where players drop off.
+StartFlow is a free, source-available Paper plugin designed to guide new players through onboarding steps and show server administrators exactly where players drop off.
 
 Many players leave a Minecraft server in their first few minutes because they are unsure what to do next. StartFlow provides players with an interactive step-by-step guide menu, tracks their actions automatically, and generates an onboarding funnel report that reveals the exact steps causing player drop-off.
 
@@ -178,4 +178,4 @@ The compiled shaded jar will be located at:
 
 ## License
 
-StartFlow is free software, licensed under the [GNU General Public License v3.0](LICENSE). You may use, study, and modify it. If you distribute it or a modified version, you must keep the copyright notice and publish the complete source code under the same license. The StartFlow and Clodo names and logo are trademarks and are not covered by the license, see [NOTICE.md](NOTICE.md).
+StartFlow is source-available and free to use on your own servers. You may read the code, change the configuration, and contribute through pull requests. Publishing or redistributing StartFlow, forks, or modified versions, and removing the Clodo credits, requires written permission. The StartFlow and Clodo names and logo are trademarks. See the [LICENSE](LICENSE) file for the full terms.
