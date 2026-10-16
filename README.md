@@ -152,12 +152,12 @@ When PlaceholderAPI is installed, the following placeholders are available:
 StartFlow detects player client locales and automatically displays messages in their preferred language. If a player's locale is not supported, messages fall back to `default-language` in `config.yml`.
 
 Included languages:
-- 🇬🇧 English (`en.yml`)
-- 🇹🇷 Turkish (`tr.yml`)
-- 🇩🇪 German (`de.yml`)
-- 🇪🇸 Spanish (`es.yml`)
-- 🇷🇺 Russian (`ru.yml`)
-- 🇧🇷 Portuguese (`pt.yml`)
+- <img src="https://raw.githubusercontent.com/clodonet/StartFlow/main/assets/flags/gb.png" width="22" alt="English"> English (`en.yml`)
+- <img src="https://raw.githubusercontent.com/clodonet/StartFlow/main/assets/flags/tr.png" width="22" alt="Turkish"> Turkish (`tr.yml`)
+- <img src="https://raw.githubusercontent.com/clodonet/StartFlow/main/assets/flags/de.png" width="22" alt="German"> German (`de.yml`)
+- <img src="https://raw.githubusercontent.com/clodonet/StartFlow/main/assets/flags/es.png" width="22" alt="Spanish"> Spanish (`es.yml`)
+- <img src="https://raw.githubusercontent.com/clodonet/StartFlow/main/assets/flags/ru.png" width="22" alt="Russian"> Russian (`ru.yml`)
+- <img src="https://raw.githubusercontent.com/clodonet/StartFlow/main/assets/flags/br.png" width="22" alt="Portuguese"> Portuguese (`pt.yml`)
 
 All language files can be edited in `plugins/StartFlow/messages/`.
 
